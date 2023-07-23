@@ -1,0 +1,18 @@
+
+    <div class="row">
+        <div class="col mx-auto">
+            
+                <div class="card-body">
+                    <div class="text-white text-center">
+                        <h1 class="display-1" style="color: rgb(255, 255, 255);"><u><b>ABC TELECOM LTD.</b></u></h1>
+                        <p style="color: black;">India's major telecommunication service providers</p>
+                        <h5 class="font-italic" style="color: black;">To register a complaint regarding our services</h5>
+                        <a *ngIf="!loginService.isLoggedIn()" role="button" routerLink="/user-login"
+                            class="btn btn-danger btn-lg">Click here</a>
+                        <a *ngIf="loginService.isLoggedIn()" role="button" routerLink="/user-login"
+                            class="btn btn-danger disabled btn-lg">Click here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
